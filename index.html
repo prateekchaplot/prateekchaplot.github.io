@@ -10,6 +10,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
+  <!-- Structured Data for Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prateek Chaplot",
+    "jobTitle": "Product Solutions Engineer",
+    "knowsAbout": ["C#", ".NET", "TypeScript", "Azure", "AI/ML", "Cloud Architecture"],
+    "sameAs": [
+      "https://github.com/prateekchaplot",
+      "https://linkedin.com/in/prateekchaplot"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Google"
+    },
+    "url": "https://prateekchaplot.github.io"
+  }
+  </script>
+
   <style>
     :root,
     [data-theme="light"] {
@@ -979,17 +999,17 @@
       </div>
 
       <div class="contact-grid">
-        <a href="mailto:prateekchaplot96@gmail.com" class="contact-card">
+        <form action="https://formspree.io/f/prateekchaplot96@gmail.com" method="POST" class="contact-card">
           <div class="contact-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
           <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value">prateekchaplot96@gmail.com</div>
+            <div class="contact-label">Email Me</div>
+            <div class="contact-value">Fill out form below</div>
           </div>
-        </a>
+        </form>
 
         <a href="https://www.linkedin.com/in/prateekchaplot/" target="_blank" rel="noopener noreferrer" class="contact-card">
           <div class="contact-icon">
@@ -1056,6 +1076,28 @@
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => setMenuOpen(false));
     });
+
+    // Contact form handler
+    const contactForm = document.querySelector('form[action*="formspree"]');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const response = await fetch(e.target.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        });
+        if (response.ok) {
+          alert('Thanks! Your message has been sent successfully.');
+          contactForm.reset();
+        } else {
+          alert('Failed to send message. Please try again.');
+        }
+      });
+    }
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
