@@ -17,6 +17,7 @@ There are no tracked assets; the avatar/cover comes from GitHub (`https://avatar
 
 - There is nothing to build, test, or lint. Preview by opening `index.html` in a browser (no dev server needed).
 - Deploy = push to `main`; GitHub Pages serves the repo root.
+- Shell commands run in PowerShell: `&&` is not a valid statement separator. Use `;` or run commands separately. Quote paths with spaces.
 
 ## Editing guidance
 
