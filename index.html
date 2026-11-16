@@ -1,1435 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prateek Chaplot | Software Engineer</title>
-  <meta name="description" content="Resume & Portfolio of Prateek Chaplot — Software Engineer with 8+ years of experience, Product Solutions Engineer at Google." />
-  <link rel="icon" href="https://prateekchaplot.github.io/assets/img/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Structured Data for Person Schema -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Prateek Chaplot is a Product Solutions Engineer at Google building AI-powered tools, cloud systems, and thoughtful software experiences.">
+  <meta property="og:title" content="Prateek Chaplot — Product Solutions Engineer">
+  <meta property="og:description" content="Engineering practical AI tools and reliable software systems. Based in Gurugram, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prateekchaplot.github.io/">
+  <title>Prateek Chaplot — Product Solutions Engineer</title>
+  <link rel="icon" href="https://prateekchaplot.github.io/assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Prateek Chaplot",
     "jobTitle": "Product Solutions Engineer",
-    "knowsAbout": ["C#", ".NET", "TypeScript", "Azure", "AI/ML", "Cloud Architecture"],
-    "sameAs": [
-      "https://github.com/prateekchaplot",
-      "https://linkedin.com/in/prateekchaplot"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Google"
-    },
-    "url": "https://prateekchaplot.github.io"
+    "url": "https://prateekchaplot.github.io",
+    "image": "https://avatars.githubusercontent.com/u/14346866?v=4",
+    "email": "mailto:prateekchaplot96@gmail.com",
+    "knowsAbout": ["C#", ".NET", "TypeScript", "Angular", "Python", "Azure", "Google Cloud", "AI/ML", "Cloud Architecture"],
+    "sameAs": ["https://github.com/prateekchaplot", "https://www.linkedin.com/in/prateekchaplot/"],
+    "worksFor": { "@type": "Organization", "name": "Google" }
   }
   </script>
-
-  <style>
-    :root,
-    [data-theme="light"] {
-      --bg-page: #f8fafc;
-      --bg-surface: #ffffff;
-      --bg-subtle: #f1f5f9;
-      --bg-elevated: #ffffff;
-      --text-main: #0f172a;
-      --text-body: #334155;
-      --text-muted: #64748b;
-      --primary: #2563eb;
-      --primary-soft: rgba(37, 99, 235, 0.07);
-      --primary-border: rgba(37, 99, 235, 0.25);
-      --border: #e2e8f0;
-      --border-strong: #cbd5e1;
-      --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 2px 8px rgba(15, 23, 42, 0.04);
-      --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 12px 24px -6px rgba(15, 23, 42, 0.08);
-      --shadow-lg: 0 8px 16px -4px rgba(15, 23, 42, 0.08), 0 24px 48px -12px rgba(15, 23, 42, 0.12);
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 18px;
-      --radius-xl: 24px;
-      --max-width: 1120px;
-      --nav-height: 64px;
-    }
-
-    [data-theme="dark"] {
-      --bg-page: #0a0f1c;
-      --bg-surface: #111827;
-      --bg-subtle: #1e293b;
-      --bg-elevated: #1a2234;
-      --text-main: #f8fafc;
-      --text-body: #cbd5e1;
-      --text-muted: #94a3b8;
-      --primary: #60a5fa;
-      --primary-soft: rgba(96, 165, 250, 0.10);
-      --primary-border: rgba(96, 165, 250, 0.30);
-      --border: #1e293b;
-      --border-strong: #334155;
-      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 12px 24px -6px rgba(0, 0, 0, 0.35);
-      --shadow-lg: 0 8px 16px -4px rgba(0, 0, 0, 0.4), 0 24px 48px -12px rgba(0, 0, 0, 0.5);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: calc(var(--nav-height) + 16px);
-      overflow-x: clip;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background-color: var(--bg-page);
-      color: var(--text-main);
-      line-height: 1.65;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-feature-settings: 'cv11', 'ss01', 'ss03';
-      overflow-x: clip;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
-
-    /* ---------- Navbar ---------- */
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: var(--nav-height);
-      background: color-mix(in srgb, var(--bg-surface) 78%, transparent);
-      backdrop-filter: blur(14px) saturate(140%);
-      -webkit-backdrop-filter: blur(14px) saturate(140%);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      position: relative;
-    }
-
-    .brand {
-      font-weight: 700;
-      font-size: 1rem;
-      letter-spacing: -0.02em;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-shrink: 0;
-    }
-
-    .brand-mark {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--primary) 70%, #6366f1));
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-weight: 800;
-      font-size: 0.85rem;
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--text-body);
-      padding: 0.5rem 0.85rem;
-      border-radius: var(--radius-sm);
-      transition: color 0.2s ease, background-color 0.2s ease;
-      position: relative;
-    }
-
-    .nav-links a:hover {
-      color: var(--text-main);
-      background: var(--bg-subtle);
-    }
-
-    .nav-links a.active {
-      color: var(--primary);
-      background: var(--primary-soft);
-    }
-
-    .nav-controls {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .icon-btn {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
-      color: var(--text-main);
-      width: 38px;
-      height: 38px;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    .icon-btn:hover {
-      border-color: var(--primary);
-      color: var(--primary);
-    }
-
-    .icon-btn svg { width: 18px; height: 18px; }
-
-    .menu-toggle { display: none; }
-
-    /* ---------- Layout ---------- */
-    main {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem 5rem;
-    }
-
-    section { scroll-margin-top: calc(var(--nav-height) + 16px); }
-
-    /* ---------- Hero ---------- */
-    .hero {
-      position: relative;
-      padding: 5rem 0 4rem;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(var(--border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border) 1px, transparent 1px);
-      background-size: 56px 56px;
-      mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
-      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
-      opacity: 0.35;
-      pointer-events: none;
-    }
-
-    .hero-glow {
-      position: absolute;
-      top: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 720px;
-      height: 420px;
-      background: radial-gradient(ellipse at center, var(--primary-soft), transparent 65%);
-      pointer-events: none;
-      filter: blur(8px);
-    }
-
-    .hero-inner {
-      position: relative;
-      max-width: 760px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.25rem;
-    }
-
-    .hero-avatar-wrap {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--bg-surface);
-      box-shadow: var(--shadow-lg);
-      background: var(--bg-subtle);
-      display: block;
-    }
-
-    .hero-avatar-ring {
-      position: absolute;
-      inset: -6px;
-      border-radius: 50%;
-      background: conic-gradient(from 180deg, var(--primary), transparent 60%, var(--primary));
-      mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
-      -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 2px));
-      opacity: 0.5;
-      animation: spin 14s linear infinite;
-    }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.35rem 0.85rem 0.35rem 0.5rem;
-      border-radius: 999px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--text-body);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .hero-eyebrow .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4rem);
-      font-weight: 800;
-      letter-spacing: -0.035em;
-      line-height: 1.05;
-      background: linear-gradient(180deg, var(--text-main) 0%, color-mix(in srgb, var(--text-main) 60%, var(--primary)) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-      color: var(--text-muted);
-      font-weight: 500;
-      letter-spacing: -0.01em;
-    }
-
-    .hero-summary {
-      color: var(--text-body);
-      font-size: 1.05rem;
-      max-width: 620px;
-      line-height: 1.7;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      margin-top: 0.5rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1.25rem;
-      border-radius: var(--radius-md);
-      font-size: 0.92rem;
-      font-weight: 600;
-      transition: all 0.2s ease;
-      border: 1px solid var(--border);
-      background: var(--bg-surface);
-      color: var(--text-main);
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      border-color: var(--primary);
-      color: var(--primary);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: #ffffff;
-      border-color: var(--primary);
-    }
-
-    .btn-primary:hover {
-      background: color-mix(in srgb, var(--primary) 88%, black);
-      color: #ffffff;
-      border-color: color-mix(in srgb, var(--primary) 88%, black);
-    }
-
-    .btn svg { width: 17px; height: 17px; }
-
-    /* ---------- Section ---------- */
-    .section {
-      padding: 3rem 0 1rem;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: baseline;
-      gap: 1.25rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .section-eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.78rem;
-      font-weight: 500;
-      color: var(--primary);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .section-title {
-      font-size: clamp(1.6rem, 3vw, 2rem);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      line-height: 1.2;
-    }
-
-    .section-line {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, var(--border), transparent);
-      min-width: 40px;
-    }
-
-    /* ---------- Experience ---------- */
-    .experience-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      position: relative;
-    }
-
-    .experience-list::before {
-      content: '';
-      position: absolute;
-      left: 11px;
-      top: 8px;
-      bottom: 8px;
-      width: 2px;
-      background: linear-gradient(180deg, var(--primary-border), var(--border));
-      border-radius: 2px;
-    }
-
-    .exp-card {
-      position: relative;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 1.9rem 1.75rem 2.6rem;
-      box-shadow: var(--shadow-sm);
-      transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-    }
-
-    .exp-card::before {
-      content: '';
-      position: absolute;
-      left: -2.6rem;
-      top: 1.9rem;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--bg-surface);
-      border: 2px solid var(--primary);
-      box-shadow: 0 0 0 4px var(--primary-soft);
-    }
-
-    .exp-card:hover {
-      border-color: var(--primary-border);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
-
-    .exp-header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 0.75rem;
-      margin-bottom: 1.1rem;
-      padding-bottom: 0.9rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .exp-role {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-main);
-      letter-spacing: -0.01em;
-    }
-
-    .exp-company {
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .exp-meta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.76rem;
-      color: var(--text-muted);
-      background: var(--bg-subtle);
-      padding: 0.3rem 0.7rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      white-space: nowrap;
-    }
-
-    .exp-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .exp-bullets li {
-      position: relative;
-      padding-left: 1.35rem;
-      color: var(--text-body);
-      font-size: 0.95rem;
-      line-height: 1.65;
-    }
-
-    .exp-bullets li::before {
-      content: '';
-      position: absolute;
-      left: 0.15rem;
-      top: 0.62rem;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--primary);
-      opacity: 0.7;
-    }
-
-    .exp-bullets strong {
-      color: var(--text-main);
-      font-weight: 600;
-    }
-
-    /* ---------- Skills ---------- */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
-    .skill-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.6rem 1.7rem;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .skill-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top right, var(--primary-soft), transparent 60%);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      pointer-events: none;
-    }
-
-    .skill-card:hover {
-      border-color: var(--primary-border);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-3px);
-    }
-
-    .skill-card:hover::after { opacity: 1; }
-
-    .skill-card-top {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-      position: relative;
-    }
-
-    .skill-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 11px;
-      background: var(--primary-soft);
-      color: var(--primary);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border: 1px solid var(--primary-border);
-    }
-
-    .skill-icon svg { width: 20px; height: 20px; }
-
-    .skill-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text-main);
-      letter-spacing: -0.01em;
-    }
-
-    .skill-desc {
-      font-size: 0.9rem;
-      color: var(--text-body);
-      line-height: 1.6;
-      position: relative;
-    }
-
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: auto;
-      position: relative;
-    }
-
-    .skill-tag {
-      background: var(--bg-subtle);
-      color: var(--text-main);
-      border: 1px solid var(--border);
-      padding: 0.3rem 0.65rem;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      font-weight: 500;
-      transition: border-color 0.2s ease, color 0.2s ease;
-    }
-
-    .skill-tag:hover {
-      border-color: var(--primary-border);
-      color: var(--primary);
-    }
-
-    /* ---------- Education ---------- */
-    .edu-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 1.9rem;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1.25rem;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .edu-card:hover {
-      border-color: var(--primary-border);
-      box-shadow: var(--shadow-md);
-    }
-
-    .edu-left {
-      display: flex;
-      align-items: center;
-      gap: 1.1rem;
-    }
-
-    .edu-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: var(--primary-soft);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--primary-border);
-      flex-shrink: 0;
-    }
-
-    .edu-icon svg { width: 22px; height: 22px; }
-
-    .edu-degree {
-      font-size: 1.08rem;
-      font-weight: 700;
-      margin-bottom: 0.2rem;
-      letter-spacing: -0.01em;
-    }
-
-    .edu-school {
-      color: var(--text-body);
-      font-size: 0.93rem;
-    }
-
-    /* ---------- Contact ---------- */
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 1.5rem;
-      align-items: start;
-    }
-
-    .contact-form-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.9rem;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .contact-form-card h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 0.35rem;
-      letter-spacing: -0.01em;
-    }
-
-    .contact-form-card p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-bottom: 1.1rem;
-    }
-
-    .form-group label {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--text-main);
-      letter-spacing: 0.01em;
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 0.7rem 0.85rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      background: var(--bg-subtle);
-      color: var(--text-main);
-      font-family: inherit;
-      font-size: 0.93rem;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    }
-
-    .form-control::placeholder { color: var(--text-muted); }
-
-    .form-control:focus {
-      outline: none;
-      border-color: var(--primary);
-      background: var(--bg-surface);
-      box-shadow: 0 0 0 3px var(--primary-soft);
-    }
-
-    textarea.form-control {
-      resize: vertical;
-      min-height: 120px;
-      line-height: 1.55;
-    }
-
-    .form-submit {
-      width: 100%;
-      justify-content: center;
-      margin-top: 0.25rem;
-    }
-
-    .form-status {
-      margin-top: 0.9rem;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      min-height: 1.2em;
-    }
-
-    .form-status.success { color: #16a34a; }
-    .form-status.error { color: #dc2626; }
-
-    .contact-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-
-    .contact-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.15rem 1.3rem;
-      display: flex;
-      align-items: center;
-      gap: 0.9rem;
-      box-shadow: var(--shadow-sm);
-      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-      min-width: 0;
-    }
-
-    .contact-card:hover {
-      border-color: var(--primary);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .contact-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: var(--primary-soft);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border: 1px solid var(--primary-border);
-    }
-
-    .contact-icon svg { width: 19px; height: 19px; }
-
-    .contact-label {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 500;
-    }
-
-    .contact-value {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--text-main);
-      word-break: break-word;
-    }
-
-    /* ---------- Footer ---------- */
-    footer {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 2rem 1.5rem 2.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .footer-links a {
-      color: var(--text-muted);
-      transition: color 0.2s ease;
-      display: inline-flex;
-    }
-
-    .footer-links a:hover { color: var(--primary); }
-    .footer-links svg { width: 18px; height: 18px; }
-
-    /* ---------- Reveal ---------- */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    .reveal.in {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; transition: none; }
-      .hero-avatar-ring { animation: none; }
-      .hero-eyebrow .dot { animation: none; }
-    }
-
-    /* ---------- Responsive ---------- */
-    @media (max-width: 900px) {
-      .skills-grid { grid-template-columns: repeat(2, 1fr); }
-      .contact-layout { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 720px) {
-      :root { --nav-height: 60px; }
-
-      .nav-container { padding: 0 1rem; }
-      .menu-toggle { display: inline-flex; }
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: var(--nav-height);
-        left: 0;
-        right: 0;
-        background: var(--bg-surface);
-        border-bottom: 1px solid var(--border);
-        box-shadow: var(--shadow-md);
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 0.5rem 1rem 0.75rem;
-        z-index: 99;
-      }
-
-      .nav-links.open { display: flex; }
-
-      .nav-links li { border-bottom: 1px solid var(--border); }
-      .nav-links li:last-child { border-bottom: none; }
-      .nav-links a { display: block; padding: 0.75rem 0.25rem; font-size: 0.95rem; }
-
-      main { padding: 0 1rem 4rem; }
-
-      .hero { padding: 3.5rem 0 2.5rem; }
-      .hero-avatar-wrap, .hero-avatar { width: 96px; height: 96px; }
-
-      .section { padding: 2.25rem 0 0.5rem; }
-
-      .exp-card { padding: 1.35rem 1.25rem 1.35rem 2.2rem; }
-      .exp-card::before { left: -2.2rem; top: 1.5rem; }
-      .experience-list::before { left: 9px; }
-
-      .skills-grid { grid-template-columns: 1fr; gap: 0.85rem; }
-      .edu-card { padding: 1.35rem; }
-      .contact-form-card { padding: 1.35rem; }
-
-      footer { padding: 1.5rem 1rem 2rem; flex-direction: column; text-align: center; gap: 0.75rem; }
-    }
-
-    @media (max-width: 380px) {
-      .hero h1 { font-size: 2.1rem; }
-      .hero-actions .btn { width: 100%; justify-content: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#top" class="brand">
-        <span class="brand-mark">PC</span> Prateek Chaplot
-      </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#experience" data-section="experience">Experience</a></li>
-        <li><a href="#skills" data-section="skills">Skills</a></li>
-        <li><a href="#education" data-section="education">Education</a></li>
-        <li><a href="#contact" data-section="contact">Contact</a></li>
-      </ul>
-      <div class="nav-controls">
-        <button class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Switch light/dark theme">
-          <svg id="icon-sun" style="display:none;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
-          </svg>
-          <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-          </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="Prateek Chaplot, home"><span class="wordmark-mark" aria-hidden="true">PC</span> Prateek Chaplot</a>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#work">Selected work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle color theme">
+          <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"/></svg>
         </button>
-        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <svg id="icon-close" style="display:none;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <main id="top">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow"></div>
-      <div class="hero-inner">
-        <div class="hero-avatar-wrap reveal">
-          <div class="hero-avatar-ring"></div>
-          <img src="https://avatars.githubusercontent.com/u/14346866?v=4" alt="Prateek Chaplot" class="hero-avatar" />
-        </div>
-        <div class="hero-eyebrow reveal">
-          <span class="dot"></span>
-          Available for opportunities
-        </div>
-        <h1 class="reveal">Prateek Chaplot</h1>
-        <p class="hero-subtitle reveal">Product Solutions Engineer @ Google</p>
-        <p class="hero-summary reveal">
-          Full-stack and backend-focused engineer with 8+ years of experience building AI-powered tooling, high-performance data pipelines, cloud microservices, and scalable web applications across C#, .NET, TypeScript, Angular, Python, and Azure/Google Cloud.
-        </p>
-        <div class="hero-actions reveal">
-          <a href="mailto:prateekchaplot96@gmail.com" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            Email Me
-          </a>
-
-          <a href="https://www.linkedin.com/in/prateekchaplot/" target="_blank" rel="noopener noreferrer" class="btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-            </svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/prateekchaplot" target="_blank" rel="noopener noreferrer" class="btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-            </svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="section-header reveal">
-        <span class="section-eyebrow mono">01</span>
-        <h2 class="section-title">Experience</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="experience-list">
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <h3 class="exp-role">Product Solutions Engineer <span class="exp-company">&bull; Google</span></h3>
-            <span class="exp-meta">Mar 2024 – Present | Gurugram, HR</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>
-              <strong>Automated Video Generation Pipeline:</strong> Engineered an end-to-end Python pipeline integrating AI and multimedia frameworks to convert static documentation into 60-second narrated videos, reducing manual video production effort from hours to minutes.
-            </li>
-            <li>
-              <strong>Frontline AI Support Extension:</strong> Co-developed an AI-powered Chrome extension integrated with internal backend services to summarize technical documentation, surface verified facts, and generate troubleshooting insights—validated across 10+ vendor support teams prior to organization-wide launch.
-            </li>
-          </ul>
-        </article>
-
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <h3 class="exp-role">Software Developer <span class="exp-company">&bull; ConverzAI</span></h3>
-            <span class="exp-meta">Jul 2022 – Mar 2024 | Mumbai, MH</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>
-              <strong>Resilient ATS Connectivity:</strong> Overhauled the Applicant Tracking System authentication layer with token refresh cycles, automated retries, and fault handling—resolving chronic sync drops and sustaining months of patch-free uptime.
-            </li>
-            <li>
-              <strong>High-Speed Dashboard &amp; Schema Redesign:</strong> Diagnosed database throttling and network bottlenecks on the internal dashboard, normalized the underlying schema, and delivered a data migration pipeline that cut load times from 5 minutes to under 25 seconds.
-            </li>
-            <li>
-              <strong>AI Candidate Scoring Engine:</strong> Re-architected the candidate matching service from the ground up, retiring brittle legacy workarounds and retraining NLP language models to drive higher recruiter adoption of AI-ranked applicants.
-            </li>
-          </ul>
-        </article>
-
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <h3 class="exp-role">Software Development Engineer <span class="exp-company">&bull; Exxat</span></h3>
-            <span class="exp-meta">Sep 2021 – Jul 2022 | Bangalore, KA</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>
-              <strong>10x Faster Placement Grids:</strong> Cut placement grid rendering times from 50 seconds to under 5 seconds by tuning slow SQL queries and implementing server-side pagination with caching.
-            </li>
-            <li>
-              <strong>Event-Driven Placement Workflows:</strong> Delivered student wishlist and placement assignment modules backed by Azure Service Bus for reliable, asynchronous status notifications across the placement lifecycle.
-            </li>
-            <li>
-              <strong>Frontend Platform Upgrade:</strong> Spearheaded the upgrade to the latest Angular release and internal design system, refactoring legacy UI components to pay down technical debt and speed up feature delivery.
-            </li>
-          </ul>
-        </article>
-
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <h3 class="exp-role">Software Engineer <span class="exp-company">&bull; Metacube</span></h3>
-            <span class="exp-meta">Jan 2018 – Sep 2021 | Jaipur, RJ</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>
-              <strong>Real-Time Analytics Interface:</strong> Built an interactive reporting dashboard featuring multi-dimensional filtering and live data visualizations to support operational decision-making.
-            </li>
-            <li>
-              <strong>Scheduled Report Delivery:</strong> Created an automated background scheduler for generating and dispatching builder reports, removing manual overhead and achieving 100% on-time delivery.
-            </li>
-            <li>
-              <strong>Hardware-Synced Distance Algorithm:</strong> Devised a custom distance computation algorithm calibrated with remote hardware sensors to fix a high-severity production bug.
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section-header reveal">
-        <span class="section-eyebrow mono">02</span>
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-card-top">
-            <div class="skill-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
-              </svg>
-            </div>
-            <h3 class="skill-title">Backend &amp; Cloud Systems</h3>
-          </div>
-          <p class="skill-desc">Designing fault-tolerant APIs, event-driven microservices, and serverless workflows at scale.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">C#</span>
-            <span class="skill-tag">.NET</span>
-            <span class="skill-tag">ASP.NET Core</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Azure Functions</span>
-            <span class="skill-tag">Azure Service Bus</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-card-top">
-            <div class="skill-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3 class="skill-title">Frontend &amp; Client Apps</h3>
-          </div>
-          <p class="skill-desc">Building responsive web interfaces, reusable UI component libraries, and browser extensions.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Angular</span>
-            <span class="skill-tag">Chrome Extensions</span>
-            <span class="skill-tag">Git</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-card-top">
-            <div class="skill-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-              </svg>
-            </div>
-            <h3 class="skill-title">Data, Analytics &amp; AI</h3>
-          </div>
-          <p class="skill-desc">Query optimization, schema design, web telemetry, and AI-assisted automation pipelines.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">SQL Server</span>
-            <span class="skill-tag">Azure Cosmos DB</span>
-            <span class="skill-tag">BigQuery</span>
-            <span class="skill-tag">Google Analytics</span>
-            <span class="skill-tag">Google Tag Manager</span>
-            <span class="skill-tag">Power BI</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section">
-      <div class="section-header reveal">
-        <span class="section-eyebrow mono">03</span>
-        <h2 class="section-title">Education</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="edu-card reveal">
-        <div class="edu-left">
-          <div class="edu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-            </svg>
-          </div>
+  <main id="main">
+    <div class="wrap">
+      <section class="hero" id="top" aria-labelledby="intro-title">
+        <div class="hero-inner">
           <div>
-            <h3 class="edu-degree">Bachelor of Technology in Computer Science (Hons.)</h3>
-            <p class="edu-school">Techno India NJR - Institute of Technology</p>
+            <p class="eyebrow">Software · Systems · Applied AI</p>
+            <h1 id="intro-title">Building useful things <span>with care.</span></h1>
+            <p class="hero-role">Product Solutions Engineer at Google</p>
+            <p class="hero-copy">I’m Prateek, a software engineer focused on turning complex problems into practical tools. Over 8+ years, I’ve built AI-powered workflows, resilient cloud services, high-performance data products, and web applications.</p>
+            <div class="hero-links">
+              <a class="text-link" href="#work">Explore selected work <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              <a class="text-link" href="mailto:prateekchaplot96@gmail.com">Get in touch</a>
+            </div>
+          </div>
+          <aside class="hero-aside" aria-label="Profile">
+            <img class="portrait" src="https://avatars.githubusercontent.com/u/14346866?v=4" alt="Portrait of Prateek Chaplot" width="68" height="68">
+            <span class="availability">Open to opportunities</span>
+            <p>Based in Gurugram, India<br>Working across software and AI</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <span class="section-index">01 / WORK</span>
+          <div><h2 class="section-title" id="work-title">A few things I’ve helped make better.</h2><p class="section-intro">Selected outcomes from teams I’ve been part of—focused on making everyday work faster, clearer, and more dependable.</p></div>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <span class="work-number mono">01 — AI &amp; AUTOMATION</span>
+            <h3>From static docs to narrated video</h3>
+            <p>Built an end-to-end Python pipeline that turns documentation into short narrated videos, reducing production effort from hours to minutes.</p>
+            <span class="work-company mono">GOOGLE · 2024—NOW</span>
+          </article>
+          <article class="work-card">
+            <span class="work-number mono">02 — DATA &amp; PERFORMANCE</span>
+            <h3>A dashboard that loads in seconds</h3>
+            <p>Redesigned database schemas and the migration path behind an internal dashboard, cutting load times from five minutes to under 25 seconds.</p>
+            <span class="work-company mono">CONVERZAI · 2022—2024</span>
+          </article>
+          <article class="work-card">
+            <span class="work-number mono">03 — PRODUCT ENGINEERING</span>
+            <h3>Placement grids, 10× faster</h3>
+            <p>Optimized SQL and introduced server-side pagination and caching to reduce placement grid rendering from 50 seconds to under five.</p>
+            <span class="work-company mono">EXXAT · 2021—2022</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <span class="section-index">02 / CAREER</span>
+          <div><h2 class="section-title" id="experience-title">Experience</h2><p class="section-intro">A path through product engineering, cloud platforms, and customer-focused problem solving.</p></div>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div><h3>Product Solutions Engineer <span class="company">· Google</span></h3><span class="experience-location">Gurugram, India</span><ul><li>Engineered a Python pipeline integrating AI and multimedia frameworks to turn technical documentation into narrated videos.</li><li>Co-developed an AI-powered Chrome extension that summarizes documentation, surfaces verified facts, and supports troubleshooting across 10+ vendor support teams.</li></ul></div>
+            <div class="meta">MAR 2024 — PRESENT</div>
+          </article>
+          <article class="experience-item">
+            <div><h3>Software Developer <span class="company">· ConverzAI</span></h3><span class="experience-location">Mumbai, India</span><ul><li>Reworked ATS authentication with token refresh, retries, and fault handling to address recurring sync interruptions.</li><li>Redesigned dashboard data structures and migration, cutting load times from five minutes to under 25 seconds.</li><li>Re-architected candidate matching and retrained NLP models to improve recruiter adoption of AI-ranked applicants.</li></ul></div>
+            <div class="meta">JUL 2022 — MAR 2024</div>
+          </article>
+          <article class="experience-item">
+            <div><h3>Software Development Engineer <span class="company">· Exxat</span></h3><span class="experience-location">Bengaluru, India</span><ul><li>Reduced placement grid rendering time from 50 seconds to under five through query tuning, pagination, and caching.</li><li>Built student wishlist and placement workflows with Azure Service Bus for asynchronous status updates.</li><li>Led an Angular and design system upgrade, refactoring legacy components to speed up feature work.</li></ul></div>
+            <div class="meta">SEP 2021 — JUL 2022</div>
+          </article>
+          <article class="experience-item">
+            <div><h3>Software Engineer <span class="company">· Metacube</span></h3><span class="experience-location">Jaipur, India</span><ul><li>Built an interactive reporting dashboard with multidimensional filters and live data visualizations.</li><li>Automated scheduled builder reports, removing manual overhead and achieving on-time delivery.</li><li>Developed a sensor-calibrated distance algorithm to resolve a high-severity production issue.</li></ul></div>
+            <div class="meta">JAN 2018 — SEP 2021</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <span class="section-index">03 / TOOLKIT</span>
+          <div><h2 class="section-title" id="about-title">How I work</h2><p class="section-intro">I move between backend systems, user-facing software, and data—choosing tools that fit the problem and the people using the result.</p></div>
+        </div>
+        <div class="skills-layout">
+          <article class="skill-group"><h3>Backend &amp; cloud</h3><p>Reliable APIs, event-driven services, and serverless workflows.</p><div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">ASP.NET Core</span><span class="tag">Python</span><span class="tag">Azure Functions</span><span class="tag">Azure Service Bus</span></div></article>
+          <article class="skill-group"><h3>Frontend &amp; client apps</h3><p>Responsive interfaces, reusable UI systems, and browser extensions.</p><div class="tags"><span class="tag">TypeScript</span><span class="tag">Angular</span><span class="tag">Chrome Extensions</span><span class="tag">Git</span></div></article>
+          <article class="skill-group"><h3>Data, analytics &amp; AI</h3><p>Query optimization, schema design, telemetry, and AI-assisted pipelines.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Azure Cosmos DB</span><span class="tag">BigQuery</span><span class="tag">Google Analytics</span><span class="tag">Google Tag Manager</span><span class="tag">Power BI</span></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <span class="section-index">04 / EDUCATION</span>
+          <div><h2 class="section-title" id="education-title">The foundations</h2></div>
+        </div>
+        <article class="education-card"><div><h3>Bachelor of Technology in Computer Science (Hons.)</h3><p>Techno India NJR — Institute of Technology · Udaipur, India</p></div><div class="meta">AUG 2014 — MAY 2018</div></article>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div><p class="eyebrow">Have something interesting in mind?</p><h2 id="contact-title">Let’s make it useful.</h2></div>
+          <div class="contact-links">
+            <a class="text-link" href="mailto:prateekchaplot96@gmail.com">Email Prateek <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+            <a class="text-link" href="https://www.linkedin.com/in/prateekchaplot/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/prateekchaplot" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <span class="exp-meta">Aug 2014 – May 2018 | Udaipur, RJ</span>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section-header reveal">
-        <span class="section-eyebrow mono">04</span>
-        <h2 class="section-title">Get in touch</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="contact-layout">
-        <div class="contact-form-card reveal">
-          <h3>Send a message</h3>
-          <p>I usually reply within a day. Feel free to reach out about work, collaborations, or just to say hi.</p>
-          <form action="https://formspree.io/f/prateekchaplot96@gmail.com" method="POST" id="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" class="form-control" placeholder="What's on your mind?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
-            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
-          </form>
-        </div>
-
-        <div class="contact-links">
-          <a href="mailto:prateekchaplot96@gmail.com" class="contact-card reveal">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value">prateekchaplot96@gmail.com</div>
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/prateekchaplot/" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">linkedin.com/in/prateekchaplot</div>
-            </div>
-          </a>
-
-          <a href="https://github.com/prateekchaplot" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">github.com/prateekchaplot</div>
-            </div>
-          </a>
-
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div>&copy; <span id="year"></span> Prateek Chaplot. All rights reserved.</div>
-    <div class="footer-links">
-      <a href="https://github.com/prateekchaplot" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/prateekchaplot/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-        </svg>
-      </a>
+      </section>
+      <footer class="footer"><span>© <span id="year"></span> Prateek Chaplot</span><span>Gurugram, India</span><div class="footer-links"><a href="https://github.com/prateekchaplot" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/prateekchaplot/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></footer>
     </div>
-    <div>Gurugram, India</div>
-  </footer>
-
-  <script>
-    const root = document.documentElement;
-    const toggleBtn = document.getElementById('theme-toggle');
-    const iconSun = document.getElementById('icon-sun');
-    const iconMoon = document.getElementById('icon-moon');
-
-    function applyTheme(theme) {
-      root.setAttribute('data-theme', theme);
-      if (theme === 'dark') {
-        iconSun.style.display = 'block';
-        iconMoon.style.display = 'none';
-      } else {
-        iconSun.style.display = 'none';
-        iconMoon.style.display = 'block';
-      }
-    }
-
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    applyTheme(savedTheme);
-
-    toggleBtn.addEventListener('click', () => {
-      const nextTheme = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-      localStorage.setItem('theme', nextTheme);
-      applyTheme(nextTheme);
-    });
-
-    // Mobile menu
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    const iconMenu = document.getElementById('icon-menu');
-    const iconClose = document.getElementById('icon-close');
-
-    function setMenuOpen(isOpen) {
-      navLinks.classList.toggle('open', isOpen);
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-      iconMenu.style.display = isOpen ? 'none' : 'block';
-      iconClose.style.display = isOpen ? 'block' : 'none';
-    }
-
-    menuToggle.addEventListener('click', () => {
-      setMenuOpen(!navLinks.classList.contains('open'));
-    });
-
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => setMenuOpen(false));
-    });
-
-    // Scroll reveal
-    const revealEls = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in');
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      revealEls.forEach(el => revealObserver.observe(el));
-    } else {
-      revealEls.forEach(el => el.classList.add('in'));
-    }
-
-    // Active nav highlighting (scroll-position based, works for tall sections)
-    const spySections = Array.from(document.querySelectorAll('section[id]')).filter(s => s.id !== 'top');
-    const navAnchors = document.querySelectorAll('.nav-links a[data-section]');
-    function getNavHeight() {
-      return parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 64;
-    }
-    function sectionTop(sec) {
-      return sec.getBoundingClientRect().top + (window.scrollY || window.pageYOffset);
-    }
-    function updateActiveNav() {
-      const navH = getNavHeight();
-      const trigger = (window.scrollY || window.pageYOffset) + navH + 24;
-      let current = null;
-      for (const sec of spySections) {
-        if (sectionTop(sec) <= trigger) {
-          current = sec.id;
-        } else {
-          break;
-        }
-      }
-      navAnchors.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('data-section') === current);
-      });
-    }
-    let spyTicking = false;
-    window.addEventListener('scroll', () => {
-      if (!spyTicking) {
-        window.requestAnimationFrame(() => {
-          updateActiveNav();
-          spyTicking = false;
-        });
-        spyTicking = true;
-      }
-    }, { passive: true });
-    updateActiveNav();
-
-    // Clicking a nav item scrolls precisely and activates immediately
-    navAnchors.forEach(link => {
-      link.addEventListener('click', (e) => {
-        const id = link.getAttribute('data-section');
-        const target = document.getElementById(id);
-        if (!target) return;
-        e.preventDefault();
-        const navH = getNavHeight();
-        const top = sectionTop(target) - navH - 16;
-        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-        navAnchors.forEach(a => a.classList.toggle('active', a === link));
-        if (typeof setMenuOpen === 'function') setMenuOpen(false);
-      });
-    });
-
-    // Contact form
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    if (contactForm) {
-      contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-        formStatus.textContent = '';
-        formStatus.className = 'form-status';
-
-        try {
-          const formData = new FormData(contactForm);
-          const response = await fetch(contactForm.action, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' },
-          });
-          if (response.ok) {
-            formStatus.textContent = 'Thanks! Your message has been sent.';
-            formStatus.classList.add('success');
-            contactForm.reset();
-          } else {
-            throw new Error('Request failed');
-          }
-        } catch (err) {
-          formStatus.textContent = 'Failed to send. Please email me directly.';
-          formStatus.classList.add('error');
-        } finally {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Send Message';
-        }
-      });
-    }
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  </main>
+  <script src="script.js" defer></script>
 </body>
 </html>
